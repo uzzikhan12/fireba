@@ -1,0 +1,41 @@
+body{
+    background-color: #003f88;
+}
+
+h1{
+    color: #003f88;
+    text-align: center
+}
+
+#main{
+    min-height: 100vh;
+}
+
+#main form{
+    border: 1px solid white;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 55vh;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    border: none;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    padding: 5px 10px;
+    color: white;
+    font-weight: bold;
+    background-color: #003f88;
+}
+
+input{
+    border: none;
+    border-bottom: 2px solid  #003f88;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,26 @@
+[debug] [2024-03-03T22:25:55.995Z] ----------------------------------------------------------------------
+[debug] [2024-03-03T22:25:55.999Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Huzaifa\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-03-03T22:25:55.999Z] CLI Version:   11.14.1
+[debug] [2024-03-03T22:25:56.000Z] Platform:      win32
+[debug] [2024-03-03T22:25:56.000Z] Node Version:  v18.18.0
+[debug] [2024-03-03T22:25:56.001Z] Time:          Mon Mar 04 2024 03:25:56 GMT+0500 (Pakistan Standard Time)
+[debug] [2024-03-03T22:25:56.001Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-03T22:25:56.106Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-03T22:25:56.107Z] > authorizing via signed-in user (huzaifa33636625@gmail.com)
+[debug] [2024-03-03T22:25:56.107Z] [iam] checking project public-b37bc for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-03-03T22:25:56.110Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/public-b37bc:testIamPermissions [none]
+[debug] [2024-03-03T22:25:56.111Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/public-b37bc:testIamPermissions x-goog-quota-user=projects/public-b37bc
+[debug] [2024-03-03T22:25:56.111Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/public-b37bc:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-03-03T22:25:57.741Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/public-b37bc:testIamPermissions 200
+[debug] [2024-03-03T22:25:57.742Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/public-b37bc:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-03-03T22:25:57.744Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/public-b37bc [none]
+[debug] [2024-03-03T22:25:58.395Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/public-b37bc 200
+[debug] [2024-03-03T22:25:58.395Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/public-b37bc {"projectId":"public-b37bc","projectNumber":"684317424182","displayName":"public","name":"projects/public-b37bc","resources":{"hostingSite":"public-b37bc"},"state":"ACTIVE","etag":"1_a595f838-2b66-4f5e-8eb3-30e5cc35f121"}
+[info] 
+[info] === Deploying to 'public-b37bc'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-03-03T22:25:58.408Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/public-b37bc/versions [none]
+[debug] [2024-03-03T22:25:58.409Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/public-b37bc/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-03-03T22:26:00.642Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/public-b37bc/versions 200
